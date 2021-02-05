@@ -1,0 +1,28 @@
+/* general */
+
+@font-face {
+  font-family: " Raleway";
+  src: url("../police/Raleway-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Arial, serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* mobile */
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 15%;
+    height: auto;
+  }
+}
+
+/* tablette */
