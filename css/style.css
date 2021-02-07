@@ -1,14 +1,13 @@
 /* general */
 
-@font-face {
-  font-family: " Raleway";
-  src: url("../police/Raleway-Regular.ttf");
+html {
+  box-sizing: border-box;
 }
-
 * {
   margin: 0;
   padding: 0;
   font-family: "Raleway", Arial, serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -16,12 +15,319 @@ a {
   color: black;
 }
 
+img {
+  display: none;
+}
+
 /* mobile */
 
 @media screen and (max-width: 500px) {
   .logo {
-    width: 15%;
+    display: inline;
+    width: 25%;
     height: auto;
+    margin-left: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .inscription {
+    float: right;
+    margin-right: 5%;
+    margin-top: 2rem;
+    color: #0065fc;
+    font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    list-style: none;
+  }
+  .nav a {
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 3px #f2f2f2;
+    padding: 2%;
+  }
+
+  .nav a:active {
+    border-bottom: solid 2px #0065fc;
+    color: #0065fc;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    display: block;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: block;
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .recherche {
+    display: flex;
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 2rem;
+  }
+
+  .recherche input {
+    display: block;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-top: solid 2px #f2f2f2;
+    border-bottom: solid 2px #f2f2f2;
+    border-left: none;
+    border-right: none;
+    width: 74%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .localisation {
+    display: block;
+    width: 13%;
+    border: none;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-color: #f2f2f2;
+  }
+
+  .loupe {
+    display: block;
+    width: 13%;
+    border: none;
+    border-radius: 30%;
+    background-color: #0065fc;
+    margin-left: -5%;
+  }
+
+  .loupe i {
+    color: white;
+  }
+
+  h5 {
+    margin-left: 5%;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  .filtres {
+    margin-left: 5%;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .filtres a {
+    display: inline-block;
+    margin-right: 3%;
+    margin-bottom: 0.5rem;
+  }
+
+  .filtres a li {
+    border: solid 2px #f2f2f2;
+    border-left: none;
+    padding-right: 1rem;
+    margin-left: 0.2rem;
+    border-radius: 27px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .filtres a li i {
+    background-color: #deebff;
+    color: #0065fc;
+    padding: 0.8rem;
+    border-radius: 27px;
+  }
+
+  #logo_info {
+    margin-left: 5%;
+    padding: 0.2rem 0.4rem;
+    border: solid 1px #f2f2f2;
+    font-size: 0.7rem;
+    border-radius: 27px;
+    color: #0065fc;
+  }
+  .info {
+    display: block;
+    width: 80%;
+    float: right;
+    margin-right: 5%;
+  }
+
+  .hebergements {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-left: 5%;
+    margin-bottom: 1.5rem;
+  }
+
+  .article_herbergement {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 2rem) min-content;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 1rem rgb(200 200 200);
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 1rem;
+  }
+  .article_herbergement div {
+    grid-column: 1/-1;
+    grid-row: 1/5;
+  }
+
+  .article_herbergement div img {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  figcaption {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+  }
+
+  figcaption h4 {
+    margin-left: 4%;
+    margin-top: 0.4rem;
+  }
+
+  figcaption p {
+    margin-left: 4%;
+    font-size: 0.9rem;
+  }
+
+  .etoile {
+    margin-left: 4%;
+    margin-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+  }
+
+  .etoile i {
+    font-size: 0.75rem;
+    color: #0065fc;
+  }
+  .populaire {
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .titre_pop {
+    display: flex;
+    justify-content: space-between;
+  }
+  #graph {
+    font-size: 1.4rem;
+    margin-right: 5%;
+  }
+
+  .article_herbergement_pop {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1.8rem);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 1rem rgb(200 200 200);
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+  .article_herbergement_pop div {
+    grid-column: 1/3;
+    grid-row: 1/-1;
+  }
+  .article_herbergement_pop div img {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    padding: 5px;
+  }
+  .article_herbergement_pop figcaption {
+    grid-column: 3/6;
+    grid-row: 1/-1;
+  }
+
+  .article_herbergement_pop figcaption h4 {
+    display: block;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .article_herbergement_pop figcaption p {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .article_herbergement_pop figcaption .etoile {
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .article_activité {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 2rem) min-content;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 1rem rgb(200 200 200);
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .article_activité div {
+    grid-column: 1/-1;
+    grid-row: 1/5;
+  }
+
+  .article_activité div img {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  .article_activité figcaption h4 {
+    margin-left: 4%;
+    margin-top: 1.2rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    background-color: #f2f2f2;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  footer ul {
+    margin-left: 5%;
+    list-style: none;
+    margin-top: 1rem;
+  }
+
+  footer ul li {
+    margin-top: 0.5rem;
   }
 }
 
