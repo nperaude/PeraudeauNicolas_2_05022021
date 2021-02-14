@@ -431,7 +431,7 @@ figcaption p {
 
   .titre_pop {
     margin-left: 5%;
-    margin-bottom: 1rem;
+    align-items: center;
   }
   .hebergement {
     padding-top: 2rem;
