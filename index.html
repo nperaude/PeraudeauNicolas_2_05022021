@@ -22,8 +22,8 @@
         <div>
           <a href="#" class="inscription">S'inscrire</a>
           <ul class="nav">
-            <a href="#"><li>Hébergements</li></a>
-            <a href="#"><li>Activités</li></a>
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activité">Activités</a></li>
           </ul>
         </div>
       </header>
@@ -42,24 +42,27 @@
         </div>
         <h5>Filtres</h5>
         <ul class="filtres">
-          <a href="#">
-            <li><i class="fas fa-money-bill-wave"></i> Économique</li>
-          </a>
-          <a href="#">
-            <li><i class="fas fa-child"></i> Familial</li>
-          </a>
-          <a href="#">
-            <li><i class="fas fa-heart"></i> Romantique</li>
-          </a>
-          <a href="#">
-            <li><i class="fas fa-dog"></i> Animaux autorisés</li>
-          </a>
+          <li>
+            <a href="#"><i class="fas fa-money-bill-wave"></i> Économique</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas fa-child"></i> Familial</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas fa-heart"></i> Romantique</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas fa-dog"></i> Animaux autorisés</a>
+          </li>
         </ul>
         <i class="fas fa-info" id="logo_info"></i>
         <p class="info">
           Plus de 500 logements sont disponibles dans cette ville
         </p>
-        <div class="hebergements">
+        <div id="hebergements" class="hebergements">
           <section class="populaire">
             <div class="titre_pop">
               <h3>Les plus populaires</h3>
@@ -262,7 +265,7 @@
             <p>Afficher plus</p>
           </section>
         </div>
-        <section>
+        <section id="activité">
           <h3>Activités à Marseille</h3>
           <div class="activité">
             <a href="#">
@@ -350,30 +353,30 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div>
-          <h5>A propos</h5>
-          <ul>
-            <a href="#"><li>Fonctionnement du site</li></a>
-            <a href="#"><li>Conditions générales de vente</li></a>
-            <a href="#"><li>Données et confidentialité</li></a>
-          </ul>
-        </div>
-        <div>
-          <h5>Nos hébergement</h5>
-          <ul>
-            <a href="#"><li>Charte qualité</li></a>
-            <a href="#"><li>Soumettre votre hôtel</li></a>
-          </ul>
-        </div>
-        <div>
-          <h5>Asistance</h5>
-          <ul>
-            <a href="#"><li>Centre d'aide</li></a>
-            <a href="#"><li>Nous contacter</li></a>
-          </ul>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div>
+        <h5>A propos</h5>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Nos hébergement</h5>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Asistance</h5>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
