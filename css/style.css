@@ -274,12 +274,23 @@ figcaption {
   .nav li {
     width: 50%;
     text-align: center;
-    border-bottom: solid 3px #f2f2f2;
-    padding: 2%;
   }
 
-  .nav a:active {
-    border-bottom: solid 2px #0065fc;
+  .nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.75rem;
+    border-bottom: solid 3px #f2f2f2;
+  }
+
+  .nav li a:active {
+    color: #0065fc;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  .nav li a:hover {
+    border-bottom: solid 3px #0065fc;
     color: #0065fc;
   }
 
@@ -576,8 +587,13 @@ figcaption {
     margin-right: 4rem;
   }
 
+  .nav li a {
+    padding-top: 2rem;
+  }
+
   .nav li a:hover {
     color: #0065fc;
+    border-top: solid 2px #0065fc;
   }
 
   h1 {
